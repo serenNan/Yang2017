@@ -4,7 +4,15 @@
 """
 
 import numpy as np
-from tqdm import tqdm
+# 尝试导入tqdm，如果失败则使用简单替代
+try:
+    from tqdm import tqdm
+except ImportError:
+    # 简单的tqdm替代
+    def tqdm(iterable, desc=None):
+        if desc:
+            print(desc)
+        return iterable
 
 
 class PhaseExtractor:

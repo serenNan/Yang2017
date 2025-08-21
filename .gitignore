@@ -1,0 +1,37 @@
+# Yang2017 项目忽略文件
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# 数据文件
+data/
+*.mp4
+*.avi
+*.mov
+*.npy
+*.npz
+
+# 结果文件
+results/
+*.png
+*.jpg
+*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
